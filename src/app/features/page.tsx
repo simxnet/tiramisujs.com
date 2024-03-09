@@ -1,9 +1,9 @@
 "use client";
 
-import AnimatedText from 'react-animated-text-content';
-import { motion } from "framer-motion"
-import { BeakerIcon, FaceSmileIcon, FingerPrintIcon, HeartIcon, LightBulbIcon, PaintBrushIcon } from '@heroicons/react/20/solid';
 import SpotlightCard from '@/components/common/spotlight-card';
+import { BeakerIcon, FaceSmileIcon, FingerPrintIcon, HeartIcon, LightBulbIcon, PaintBrushIcon } from '@heroicons/react/20/solid';
+import { motion } from "framer-motion";
+import AnimatedText from 'react-animated-text-content';
 
 export default function Page() {
     return <div className=''>
@@ -25,13 +25,15 @@ export default function Page() {
                 >
                     Why choose Seyfert for your next project?
                 </AnimatedText>
-                <motion.p className='text-default-500 duration-200 lg:text-base text-sm' initial={{ y: 10, opacity: 0 }}
+                <motion.p className='text-default-500 duration-200 text-lg' initial={{ y: 10, opacity: 0 }}
                     animate={{ y: 0, opacity: 100 }}
                     transition={{
                         duration: 0.5,
                         delay: 0.5
                     }}>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsam? Sed, minima nemo deserunt id commodi quod aliquid hic consequuntur numquam? Maiores sit quod reprehenderit optio rem esse consequuntur eveniet.
+                    Discord.js? Lots of ram. Oceanic? Eris or something.
+                    Detritus? Just for NotSoBot.
+                    Seyfert? It's cool, only chads use it
                 </motion.p>
             </div>
         </div>
@@ -41,12 +43,12 @@ export default function Page() {
                 duration: 0.5,
                 delay: 1
             }}>
-            <SpotlightCard icon={<FingerPrintIcon className='w-10 h-10' />} title="RAM saver" description="Seyfert is amazingly lightweight" />
-            <SpotlightCard icon={<BeakerIcon className='w-10 h-10' />} title="Latest features" description="Seyfert is in development and it has the latest Discord features" />
-            <SpotlightCard icon={<FaceSmileIcon className='w-10 h-10' />} title="Dev experience" description="Seyfert is made entirely in Typescript to build scalable bots at the speed of light" />
-            <SpotlightCard icon={<HeartIcon className='w-10 h-10' />} title="24/4 Support" description="Seyfert has a good support team who will assist you in your code" />
+            <SpotlightCard icon={<FingerPrintIcon className='w-10 h-10' />} title="RAM saver" description="Seyfert is amazingly lightweight." />
+            <SpotlightCard icon={<BeakerIcon className='w-10 h-10' />} title="Latest features" description="Seyfert is in development and it has the latest Discord features." />
+            <SpotlightCard icon={<FaceSmileIcon className='w-10 h-10' />} title="Dev experience" description="Seyfert is made entirely in Typescript." />
+            <SpotlightCard icon={<HeartIcon className='w-10 h-10' />} title="24/7 Support" description="Seyfert has a good support team." />
             <SpotlightCard icon={<LightBulbIcon className='w-10 h-10' />} title="Written from scratch" description="Seyfert is 100% written from scratch, no external dependencies." />
-            <SpotlightCard icon={<PaintBrushIcon className='w-10 h-10' />} title="Type-safe" description="Seyfert is fully type-safed, never worry about a wrong type again" />
+            <SpotlightCard icon={<PaintBrushIcon className='w-10 h-10' />} title="Type-safe" description="Seyfert is fully type-safed, never worry about a wrong type again." />
         </motion.div>
     </div>
 }

@@ -1,9 +1,9 @@
 "use client";
 
-import AnimatedText from 'react-animated-text-content';
-import { motion } from "framer-motion"
 import { HeartIcon } from '@heroicons/react/20/solid';
+import { motion } from "framer-motion";
 import Link from 'next/link';
+import AnimatedText from 'react-animated-text-content';
 
 const credits = {
     main: [
@@ -31,12 +31,12 @@ const credits = {
         {
             social: "https://github.com/yuzudev",
             name: "Yuzu",
-            quote: "Main idea, founder"
+            quote: "Biscuitjs founder."
         },
         {
             social: "https://github.com/miiadev",
             name: "Miia",
-            quote: "Domain registration, etc"
+            quote: "Domain registration, consultancy, etc"
         },
         {
             social: "https://github.com/drylozu",

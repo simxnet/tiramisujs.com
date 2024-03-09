@@ -1,23 +1,10 @@
 "use client";
 
-import AnimatedText from 'react-animated-text-content';
-import { AnimatePresence, motion } from "framer-motion"
+import { BookOpenIcon, ChatBubbleLeftEllipsisIcon } from '@heroicons/react/20/solid';
 import { Button, Snippet } from '@nextui-org/react';
-import { ArrowRightIcon, BookOpenIcon, ChatBubbleLeftEllipsisIcon } from '@heroicons/react/20/solid';
+import { AnimatePresence, motion } from "framer-motion";
 import Link from 'next/link';
-
-/**
- * TODO:
- * <div className='my-10'>
-      <Marquee gradient gradientColor="#09090b" pauseOnHover>
-        <div className='gap-3 flex items-center'>
-          {[...Array(9)].map(() => <div className='w-32 h-20 rounded-lg bg-default-50 flex items-center justify-center'>
-            <BoltIcon className='w-6 h-6 mr-2' />Bolt
-          </div>)}
-        </div>
-      </Marquee>
-    </div>
- */
+import AnimatedText from 'react-animated-text-content';
 
 export default function Page() {
   return <div className=''>
@@ -53,7 +40,7 @@ export default function Page() {
             duration: 0.5,
             delay: 1
           }}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, ipsam? Sed, minima nemo deserunt id commodi quod aliquid hic consequuntur numquam? Maiores sit quod reprehenderit optio rem esse consequuntur eveniet.
+          Discord.js and Sapphire are deprecated, use Seyfert instead.
         </motion.p>
         <motion.div className='flex items-center gap-2' initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 100 }}
